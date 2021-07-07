@@ -288,5 +288,5 @@ by Joshua Bloch
 #### Item 67: Avoid excessive synchronization
 * Inside a `synchronized` region, do not invoke a method that is provided by the client as a function object, or can be overriden.
 * Reentrant locks simplify the construction of multi-threaded object oriented programs, but can allow foreign methods to access an object in an inconsistent state.
-* Only make a mutable class thread-safe if intended for concurrent use and you can achieve better concurrency with internal locking; otherwise, punt locking to the client.
+* Only make a mutable class thread-safe if intended for concurrent use and you can achieve better concurrency with internal locking; otherwise, put locking to the client.
 
